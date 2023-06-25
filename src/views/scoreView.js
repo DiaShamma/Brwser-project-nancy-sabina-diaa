@@ -32,13 +32,13 @@ export const updateScoreCounter = (score) => {
 
   if (currentQuestion.selected === currentQuestion.correct) {
     const correctImage = document.createElement('img');
-    correctImage.src =/public/images/correctanswer.PNG;
+    correctImage.src ='/public/images/correctanswer.PNG';
     correctImage.alt = 'Right Answer';
     correctImage.classList.add('slide-in'); // Add a fade-in animation class
     answerIndicator.appendChild(correctImage);
   } else {
     const wrongImage = document.createElement('img');
-    wrongImage.src = /public/images/wronganswer.PNG;
+    wrongImage.src = '/public/images/wronganswer.PNG';
     wrongImage.alt = 'Wrong Answer';
     wrongImage.classList.add('slide-in'); // Add a slide-in animation class
     answerIndicator.appendChild(wrongImage);
