@@ -32,7 +32,7 @@ export const updateScoreCounter = (score) => {
 
   if (currentQuestion.selected === currentQuestion.correct) {
     const correctImage = document.createElement('img');
-    correctImage.src = '/public/images/correct.png'
+    correctImage.src = '../public/images/correct.png'
     correctImage.alt = 'Right Answer';
     correctImage.classList.add('slide-in'); // Add a fade-in animation class
     answerIndicator.appendChild(correctImage);
