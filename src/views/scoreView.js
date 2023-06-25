@@ -38,7 +38,7 @@ export const updateScoreCounter = (score) => {
     answerIndicator.appendChild(correctImage);
   } else {
     const wrongImage = document.createElement('img');
-    wrongImage.src = /public/images/wronganswer.PNG
+    wrongImage.src = /public/images/wronganswer.PNG;
     wrongImage.alt = 'Wrong Answer';
     wrongImage.classList.add('slide-in'); // Add a slide-in animation class
     answerIndicator.appendChild(wrongImage);
