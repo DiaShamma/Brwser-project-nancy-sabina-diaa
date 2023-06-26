@@ -41,13 +41,14 @@ export const initQuestionPage = (userInterface) => {
     }
 
 // timer(); comment out in order to create a new function to stop the timer in welcome page
-function stop(timer) {
-  if (timer === initQuestionPage) {
-    return clearInterval;
-  } else {
-    return timer;
-  }
-}
+    function stop(timer) {
+      if (timer === initQuestionPage) {
+        return clearInterval;
+      } else {
+        return timer;
+      }
+    }
+    stop(timer);
   const generateOptionsHTML = (question) => {
     const { answers } = question;
     let optionsHTML = '';
