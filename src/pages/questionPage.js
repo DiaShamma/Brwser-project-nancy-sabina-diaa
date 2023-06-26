@@ -40,7 +40,7 @@ export const initQuestionPage = (userInterface) => {
       nextButton.addEventListener('click', handleNextButtonClick);
     }
 
-    // timer();
+    timer();
 
     //questionPage.js
 // timer(); comment out in order to create a new function to stop the timer in welcome page
