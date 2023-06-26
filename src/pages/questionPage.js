@@ -49,6 +49,7 @@ export const initQuestionPage = (userInterface) => {
       }
     }
     stop(timer);
+
   const generateOptionsHTML = (question) => {
     const { answers } = question;
     let optionsHTML = '';
