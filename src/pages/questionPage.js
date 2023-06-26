@@ -40,11 +40,19 @@ export const initQuestionPage = (userInterface) => {
       nextButton.addEventListener('click', handleNextButtonClick);
     }
 
-    timer();
+ 
 
     //questionPage.js
 // timer(); comment out in order to create a new function to stop the timer in welcome page
 
+function stop(timer) {
+  if (timer === initQuestionPage) {
+    return clearInterval;
+  } else {
+    return timer;
+  }
+}
+stop(timer);
 
     // Update the progress bar after rendering the question page
     updateProgressBar(); // Updated here
