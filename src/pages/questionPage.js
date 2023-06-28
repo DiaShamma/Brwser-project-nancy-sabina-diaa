@@ -119,5 +119,5 @@ export const initQuestionPage = (userInterface) => {
 };
 
 // Call the function to initialize the question page
-// initQuestionPage(document.getElementById('user-interface'));
+ initQuestionPage(document.getElementById('user-interface'));
 
