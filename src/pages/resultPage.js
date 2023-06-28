@@ -1,7 +1,5 @@
 // resultPage.js
-import { initWelcomePage } from './welcomePage.js';
-import { quizData } from '../data.js';
-import { updateScoreCounter } from '../views/scoreView.js';
+
 
 export function initResultPage(userInterface, score, totalQuestions, initQuestionPageCallback = null) {
   const resultPage = document.createElement('div');

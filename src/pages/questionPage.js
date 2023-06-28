@@ -10,7 +10,7 @@ export const initQuestionPage = (userInterface) => {
   const { questions } = quizData;
 
   const updateQuestionPage = () => {
-    const { currentQuestionIndex, questions } = quizData;
+    const { currentQuestionIndex, } = quizData;
 
     const question = questions[currentQuestionIndex] || {
       text: 'Congratulations, you have completed the quiz. Click next to see your score and feedback',
@@ -40,9 +40,9 @@ export const initQuestionPage = (userInterface) => {
       nextButton.addEventListener('click', handleNextButtonClick);
     }
 
- 
 
-    timer(); 
+
+    timer();
 
 
 
@@ -119,5 +119,5 @@ export const initQuestionPage = (userInterface) => {
 };
 
 // Call the function to initialize the question page
- initQuestionPage(document.getElementById('user-interface'));
+initQuestionPage(document.getElementById('user-interface'));
 
